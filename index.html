@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Resmi PT Nusantara Keluarga Jaya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <input type="checkbox" name="" id="toggler" />
+      <label for="toggler" class="fas fa-bars"></label>
+      <a href="#" class="logo">PT. NUSANTARA KELUARGA JAYA</a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#products">products</a>
+        <a href="#review">owner</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- tutup header -->
+
+    <!-- home section -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Building Trust</h3>
+        <span>Good quality, high service, and sustainable solutions for every company</span>
+        <p><a href=" https://wa.me/082113423866" class="btn">Contact Us</a></p>
+      </div>
+    </section>
+
+    <!-- tutup home -->
+
+    <!-- about section -->
+
+    <section class="about" id="about">
+      <h1 class="heading"><span> about </span> us</h1>
+
+      <div class="row">
+        <div class="gambar">
+          <img src="img rafli/cengkehmentah.jpg" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>Why about us?</h3>
+          <p>We are a leading clove exporter, offering high-quality products directly from the finest farms in Indonesia</p>
+          <p>🌿 Our Advantages:</p>
+          <p>- Premium Cloves: Distinctive aroma and flavor</p>
+          <p>- Fast Shipping: On time every time</p>
+          <p>- Competitive Pricing: High quality at affordable prices</p>
+          <p>Enhance your products with the best cloves! Contact us for attractive offers</p>
+          <p>Watch the video to know indonesian spice farmers, work with us.</p>
+          <a href="https://youtu.be/aO5P2dqNfFk?si=qARvjk5XU0DZCdAy" class="btn">Watch video</video></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section tutup -->
+
+    <!-- product -->
+
+    <section class="products" id="products">
+      <h1 class="heading">latest <span>products</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="img rafli/Cengkeh.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="cart-btn">Order Product</a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Clove spice</h3>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img rafli/clovepowder.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="cart-btn">Order Product</a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Clove Powder</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- prodyct tutup -->
+
+    <!-- review -->
+
+    <section class="review" id="review">
+      <h1 class="heading">Owner <span>Speak</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>Years of experience growing spices</p>
+          <p>We are here in collaboration with the company to introduce and also spread Indonesian cloves to the eyes of the world.</p>
+          <p>Clove products are always used in any part of the world, be it for cosmetics, food, or other products</p>
+          <p>We are ready to meet your needs, from small to large scale, worldwide</p>
+          <p>Contact us for special offers and enhance your products with the finest cloves!</p>
+          <div class="user">
+            <img src="img rafli/Owner.png" alt="" />
+            <div class="user-info">
+              <span href="https://www.instagram.com/raasyiid_rafli/profilecard/?igsh=MXRpOWVmcXAxMDF6Yg==">Mr. Rafli Rasyidin</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+      </div>
+    </section>
+
+    <!-- review tutup -->
+
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+      <div>
+      <h1 class="heading"><span> introduce </span> your company</h1> 
+      </div>
+      <div class="row">
+        <form action="#" class="form-group" id="whatsappForm">
+          <div class="form-group mb-3">
+          <input id="name" placeholder="Your Company" class="box" required>
+          </div>
+          <div class="form-group mb-3">
+          <input id="email" placeholder="E-mail" class="box" required>
+          </div>
+          <div class="form-group mb-3">
+          <input id="number" placeholder="Phone Number" class="box" required>
+          </div>
+          <textarea name="" class="box" placeholder="Company Addess" id="message" cols="30" rows="10"></textarea>
+          <div class="text-end">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+        
+
+        <script>
+          document.getElementById("whatsappForm").addEventListener("submit", function (event) {
+                  event.preventDefault();
+      
+                  var name		= document.getElementById("name").value;
+                  var email 	= document.getElementById("email").value;
+                  var number 		= document.getElementById("number").value;
+                  var message 	= document.getElementById("message").value;
+                  let contact 	= '+6282113423866'
+      
+                  var encodedMessage = encodeURIComponent(
+                      "Your Company	: " + name + "\n" +
+                      "E-mail	: " + email + "\n" +
+                      "Phone Number		: " + number + "\n" +
+                      "Company Address		: " + message
+                  );
+      
+                  var link;
+      
+                  // Check if user is on a mobile device
+                  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                      link = `whatsapp://send?phone=${contact}&text=${encodedMessage}`;
+                  } else { // Desktop device
+                      link = `https://api.whatsapp.com/send?phone=${contact}&text=${encodedMessage}`;
+                  }
+      
+                  window.open(link, '_blank');
+      });
+         </script>
+    </section>
+
+    <!-- contact tutup -->
+
+    <!-- footer -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="">home</a>
+          <a href="">about</a>
+          <a href="">products</a>
+          <a href="">owner</a>
+          <a href="">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>Account</h3>
+          <a href="https://www.instagram.com/nusakeluarga_jaya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+          <a href="https://www.instagram.com/nusakeluarga_jaya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">nusakeluarga_jaya</a>
+          <a >E-mail</a>
+          <a >rasyidrafli@ekspor.site</a>
+          <a>rasyirafli20@gmail.com</a>
+        </div>
+
+        <div class="box">
+          <h3>locations</h3>
+          <a href="https://maps.app.goo.gl/8fZNCvN59Fqd3e95A">Bandung, West Java 40375</a>
+          <a href="https://maps.app.goo.gl/vEjKsVcRkBTy15TH7">Indonesian</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href=" https://wa.me/082113423866">(+62)821-1342-3866</a>
+        </div>
+      </div>
+
+      <div class="credit">created by <span> nvlgh29 </span> | all rights reserved</div>
+    </section>
+
+    <!-- footer tutup -->
+  </body>
+</html>
